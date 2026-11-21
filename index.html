@@ -167,7 +167,7 @@ function render(lang){
   }).join('');
   document.getElementById('shots').innerHTML = ['list','quests','card','map'].map(function(n){
     var f = n==='map' ? 'ko-map' : lang+'-'+n;
-    return '<img src="assets/'+f+'.jpg" alt="Nubi" loading="lazy">';
+    return '<img src="'+f+'.jpg" alt="Nubi" loading="lazy">';
   }).join('');
   document.getElementById('services').innerHTML = t.sv.map(function(s){
     return '<div class="i"><b>'+esc(s.t)+'</b><span>'+esc(s.x)+'</span></div>';
